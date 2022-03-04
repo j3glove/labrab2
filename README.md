@@ -1,0 +1,3 @@
+Вариант 2. Лабораторная Работа N2 ИСТбд-11 Жиглов Александр
+Написать программу, которая читая последовательность цифр из файла, вводит ее на экран, меняя местами каждые две соседних цифры пока не встретит К подряд идущих нуля. После чего меняет каждую К-тую пару. К подряд идущих нуля не выводятся.
+/// Option 2 Laboratory work 2 Write a program that has a clear sequence of digits from a file, displays it on the screen, swapping every two adjacent digits until it meets consecutive zeros. After that, he changes each K-th pair. There are no consecutive zeroes displayed.
