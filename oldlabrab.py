@@ -17,10 +17,10 @@ def zeroscount(content,i): #функция считающая tempk
 
 
 try:
-    with open("text.txt", 'r') as file:
+    with open("text", 'r') as file:
         content = file.read(max_buffer_len)
         if not content:
-            print("\nФайл text.txt в директории проекта пустой.\nДобавьте не пустой файл в директорию или переименуйте существующий *.txt файл.")
+            print("\nФайл .txt в директории проекта пустой.\nДобавьте не пустой файл в директорию или переименуйте существующий *.txt файл.")
         while content:
 
             while i < (len(content)-1):
@@ -43,7 +43,7 @@ try:
                 if i+1==len(content):
                     finalbuffer+=content[i]
                 if len(finalbuffer) >= max_buffer_len:
-                    print("\nФайл text.txt содержит блок цифр, превышающий максимальный размер буфера = " + str(max_buffer_len) + " символов.\nОткорректируйте файл text.txt в директории или переименуйте существующий *.txt файл.")
+                    print("\nФайл .txt содержит блок цифр, превышающий максимальный размер буфера = " + str(max_buffer_len) + " символов.\nОткорректируйте файл text.txt в директории или переименуйте существующий *.txt файл.")
                     maxbuffererror_Flag=True
                     break
                 i+=2
@@ -55,4 +55,4 @@ try:
                 print(finalbuffer)
             print("Program time", finish-start, "seconds")
 except ValueError:
-    print("Файл text.txt содержит символы. Откорректируйте файл text.txt в директории или переименуйте существующий *.txt файл")
+    print("Файл .txt содержит символы. Откорректируйте файл text.txt в директории или переименуйте существующий *.txt файл")
